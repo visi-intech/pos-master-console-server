@@ -10,7 +10,11 @@
         <xpath expr="//field[@name='origin']" position="after">
             <field name="is_integrated"/>
             <field name="vit_trxid"/>
+            <field name="target_location"/>
         </xpath>
+         <field name="origin" position="attributes">
+            <attribute name="readonly">0</attribute>
+        </field>
       </field>
     </record>
 

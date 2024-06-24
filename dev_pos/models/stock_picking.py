@@ -9,3 +9,4 @@ class StockPicking(models.Model):
 
     is_integrated = fields.Boolean(string="Integrated", default=False)
     vit_trxid = fields.Char(string="Transaction ID", default=False)
+    target_location = fields.Many2one('master.warehouse', string="Target Location")
